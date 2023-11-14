@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <title>Spider Game</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("spiderbackground.jpg");
+            background-size: cover;
+        }
+        .box{
+            height: 600px;
+            width:600px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            justify-content: center;
+            align-items: flex-start;
+            overflow: hidden;
+            background-color: rgb(255,255,255);
+        }
+        .noob{
+            height: 200px;
+            width: 100%;
+            background-color: rgba(255,0,0,0.6);
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+        }
+        .intermediate{
+            height: 200px;
+            width: 100%;
+            background-color: rgba(255,255,0,0.6);
+            position: absolute;
+            bottom: 200px;
+            z-index: -1;
+        }
+        .pro{
+            height: 200px;
+            width: 100%;
+            background-color: rgba(34,255,0,0.6);
+            position: absolute;
+            bottom: 400px;
+            z-index: -1;
+        }
+        .first, .second, .third, .fourth, .fifth{
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .first img, .second img, .third img, .fourth img, .fifth img{
+            width: 100%;
+        }
+        .spiders{
+            display: flex;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        .first{
+            animation: move 30s linear infinite;
+            transition: 0.5s;
+        }
+        .second{
+            animation: move 35s linear infinite;
+            transition: 0.5s;
+        }
+        .third{
+            animation: move 38s linear infinite;
+            transition: 0.5s;
+        }
+        .fourth{
+            animation: move 28s linear infinite;
+            transition: 0.5s;
+        }
+        .fifth{
+            animation: move 40s linear infinite;
+            transition: 0.5s;
+        }
+        @keyframes move{
+            from{
+                transform: translateY(0);
+            }
+            to{
+                transform: translateY(3000px);
+            }
+        }
+        .one{
+            position: absolute;
+            top: 0;
+        }
+        .two{
+            position: absolute;
+            top: -300px;
+        }
+        .three{
+            position: absolute;
+            top: -600px;
+        }
+        .four{
+            position: absolute;
+            top: -900px;
+        }
+        .five{
+            position: absolute;
+            top: -1200px;
+        }
+        .six{
+            position: absolute;
+            top: -1500px;
+        }
+        .seven{
+            position: absolute;
+            top: -1800px;
+        }
+        .eight{
+            position: absolute;
+            top: -2100px;
+        }
+        .nine{
+            position: absolute;
+            top: -2400px;
+        }
+        .ten{
+            position: absolute;
+            top: -2700px;
+        }
+        h1{
+            color: #fff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 4rem;
+        }
+        .pro h2, .intermediate h2, .noob h2{
+            color: #555;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 1.5rem;
+            padding-top: 5rem;
+        }
+    </style>
+    <body>
+        <h1>Spider Game</h1>
+        <div class="box">
+            <div class="spiders one">
+                <div class="first"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="second"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="third"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fourth"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fifth"><img src="spider.png" onclick="this.style.display='none'"></div>
+            </div>
+            <div class="spiders two">
+                <div class="first"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="second"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="third"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fourth"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fifth"><img src="spider.png" onclick="this.style.display='none'"></div>
+            </div>
+            <div class="spiders three">
+                <div class="first"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="second"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="third"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fourth"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fifth"><img src="spider.png" onclick="this.style.display='none'"></div>
+            </div>
+            <div class="spiders four">
+                <div class="first"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="second"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="third"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fourth"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fifth"><img src="spider.png" onclick="this.style.display='none'"></div>
+            </div>
+            <div class="spiders five">
+                <div class="first"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="second"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="third"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fourth"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fifth"><img src="spider.png" onclick="this.style.display='none'"></div>
+            </div>
+            <div class="spiders six">
+                <div class="first"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="second"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="third"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fourth"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fifth"><img src="spider.png" onclick="this.style.display='none'"></div>
+            </div>
+            <div class="spiders seven">
+                <div class="first"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="second"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="third"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fourth"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fifth"><img src="spider.png" onclick="this.style.display='none'"></div>
+            </div>
+            <div class="spiders eight">
+                <div class="first"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="second"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="third"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fourth"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fifth"><img src="spider.png" onclick="this.style.display='none'"></div>
+            </div>
+            <div class="spiders nine">
+                <div class="first"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="second"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="third"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fourth"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fifth"><img src="spider.png" onclick="this.style.display='none'"></div>
+            </div>
+            <div class="spiders ten">
+                <div class="first"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="second"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="third"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fourth"><img src="spider.png" onclick="this.style.display='none'"></div>
+                <div class="fifth"><img src="spider.png" onclick="this.style.display='none'"></div>
+            </div>
+            <div class="pro" title="Amazing"><h2>Amazing</h2></div>
+            <div class="intermediate" title="Not Bad"><h2>Not Bad</h2></div>
+            <div class="noob" title="Keep it up"><h2>Keep it up</h2></div>
+        </div>
+    </body>
+</html>
